@@ -1,2 +1,2 @@
 # todo_list
-Lista de tarefas, atividade desenvolvida na S05M01 do FMT, FullStack.
+Lista de tarefas, projeto desenvolvido na S05M01 do FMT, FullStack.
