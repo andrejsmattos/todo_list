@@ -1,0 +1,93 @@
+* {
+  font-family: Roboto;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background: linear-gradient(to bottom, #2b187a, #18417a);
+  min-height: 100vh;
+  width: 100vw;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.container-box {
+  width: 100%;
+  max-width: 540px;
+  padding: 40px 30px 70px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-box h1 {
+  justify-content: center;
+  color: rgb(29, 29, 29);
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.input-data {
+  display: flex;
+  justify-content: center;
+}
+
+#input-tarefa {
+  height: 50px;
+  border-radius: 100px 0 0 100px;
+  border: 1px solid lightgray;
+  width: 300px;
+  margin-bottom: 20px;
+  margin-right: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding-left: 25px;
+}
+
+
+.btn-add {
+  border: none;
+  margin-left: 0;
+  background-color: rgb(32, 112, 232);
+  color: white;
+  height: 50px;
+  padding: 0 25px;
+  border-radius: 0px 40px 40px 0;
+  font-weight: bold;
+  transition: .2s;
+}
+
+.btn-add:hover{
+  background-color: rgb(27, 95, 197);
+  cursor: pointer;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: flex-start;
+  background-color: brown;
+  margin-bottom: 1.5rem;
+}
+
+.list-items {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  line-height: 30px;
+  text-align: left;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-left: 30px;
+}
+
+.input-li {
+  margin-right: 20px;
+}
+
+
+
