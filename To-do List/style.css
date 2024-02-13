@@ -15,7 +15,7 @@
 .container-box {
   width: 100%;
   max-width: 540px;
-  padding: 40px 30px 70px;
+  padding: 40px 30px 40px 30px;
   background-color: white;
   border-radius: 20px;
   display: flex;
@@ -31,25 +31,26 @@
 }
 
 .input-data {
-  display: flex;
   justify-content: center;
+  display: flex;
 }
 
 #input-tarefa {
   height: 50px;
   border-radius: 100px 0 0 100px;
   border: 1px solid lightgray;
-  width: 300px;
   margin-bottom: 20px;
   margin-right: 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding-left: 25px;
+  width: 60%
 }
 
 
 .btn-add {
   border: none;
   margin-left: 0;
+  margin-right: 0;
   background-color: rgb(32, 112, 232);
   color: white;
   height: 50px;
@@ -65,29 +66,16 @@
 }
 
 .list {
+  list-style: none; /* 4. REMOÇÃO DOS BULLETPOINTS DA <UL>*/
+  padding: 0;
+}
+
+.li-items {
+
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+}
+
+.li-li {
   text-align: left;
-  align-items: flex-start;
-  background-color: brown;
-  margin-bottom: 1.5rem;
 }
-
-.list-items {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  margin-left: 40px;
-  line-height: 30px;
-  text-align: left;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding-left: 30px;
-}
-
-.input-li {
-  margin-right: 20px;
-}
-
-
-
