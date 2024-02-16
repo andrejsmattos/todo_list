@@ -6,7 +6,7 @@
 
 .container {
   background: linear-gradient(to bottom, #2b187a, #18417a);
-  /* 5. CONTAINER A O CENTRO DA PÁGINA */
+  /* [M01S06] Ex. 1 - CONTAINER A O CENTRO DA PÁGINA */
   min-height: 100vh;
   margin: 0;
   display: flex;
@@ -17,7 +17,7 @@
 .container-box {
   width: 100%;
   max-width: 540px;
-  padding: 40px 30px 40px 30px; /* 5. ESPAÇAMENTO ENTRE ITENS*/
+  padding: 40px 30px 40px 30px; /* [M01S06] Ex. 1 - ESPAÇAMENTO ENTRE ITENS*/
   background-color: white;
   border-radius: 20px;
   display: flex;
@@ -48,7 +48,7 @@
   width: 60%
 }
 
-/* 5. POSICIONAMENTO BOTÃO 'ADICIONAR' */
+/* [M01S06] Ex. 1 - POSICIONAMENTO BOTÃO 'ADICIONAR' */
 .btn-add {
   border: none;
   margin-left: 0;
@@ -59,7 +59,7 @@
   padding: 0 25px;
   border-radius: 0px 40px 40px 0;
   font-weight: bold;
-  transition: .2s;
+  transition: .15s;
 }
 
 .btn-add:hover{
@@ -67,41 +67,54 @@
   cursor: pointer;
 }
 
-/* 5. ESPAÇAMENTO ENTRE ITENS */
+.btn-add:active {
+  opacity: 0.5;
+}
+
+/* [M01S06] Ex. 1 - ESPAÇAMENTO ENTRE ITENS */
 .list {
-  list-style: none; /* 4. REMOÇÃO DOS BULLETPOINTS DA <UL>*/
+  list-style: none; /* [M01S05] Ex. 1 - REMOÇÃO DOS BULLETPOINTS DA <UL>*/
   padding-left: 60px;
   padding-right: 60px;
   line-height: 40px;
 }
 
-/* 5. POSICIONAMENTO DA LISTA */
+/* [M01S06] Ex. 1 - POSICIONAMENTO DA LISTA */
 .li-items {
  display: flex;
- justify-content: space-between;
+ justify-content: space-between; /* [M01S06] Ex. 2 - DISTANCIAMENTO ENTRE ITENS */
 }
 
-.li-items li {
-  align-items: flex-start;
-  text-align: left;
- }
-
-.input-li {
-  margin-right: 20px;
+ /* [M01S06] Ex. 2 - LINE THROUGH QUANDO CHECKBOX FOR MARCADO */
+ .input-li:checked + span {
+  text-decoration: line-through; /* [M01S06] Ex. 2 - POSICIONAMENTO DA LISTA */
 }
 
+/* [M01S06] Ex. 2 - BOTÃO EXCLUIR */
 .erase {
   border: none;
-  width: 30px;
-  height: 30px;
-  border-radius: 30px;
-  color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 35px;
+  color: rgb(91, 91, 91);
   font-weight: bold;
-  background-color: rgb(231, 76, 60);
+  background-color: #f0f0f0;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: 0.15s;
 }
 
+.erase i {
+  font-size: 22px;
+}
+
 .erase:hover {
-  background-color: rgb(231, 60, 60);
+  background-color: rgba(219, 49, 49, 0.899);
+  color: white;
+}
+
+.erase:active {
+  opacity: 0.5;
 }

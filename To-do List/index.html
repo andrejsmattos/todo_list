@@ -1,49 +1,50 @@
-<!-- 2. CRIAÇÃO DO HTML -->
+<!-- [M01S05] Ex. 2 - CRIAÇÃO DO HTML -->
 <!DOCTYPE html>
-<!-- 2. DEFINIÇÃO DA LÍNGUA -->
+<!-- [M01S05] Ex. 2 - DEFINIÇÃO DA LÍNGUA -->
 <html lang="pt-BR">
 <head>
-  <!-- 2. DEFINIÇÃO DO CONJUNTO DE CARACTERES -->
+  <!-- [M01S05] Ex. 2 - DEFINIÇÃO DO CONJUNTO DE CARACTERES -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- 2. DEFINIÇÃO DO TÍTULO -->
+  <!-- [M01S05] Ex. 2 - DEFINIÇÃO DO TÍTULO -->
   <title>Lista de Tarefas</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/ffe5c7786e.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <section class="container">
     <div class="container-box">
-      <!-- 3. ADIÇÃO DO CABEÇALHO -->
+      <!-- [M01S05] Ex. 3 - ADIÇÃO DO CABEÇALHO -->
       <header>
         <h1>Lista de Tarefas</h1>
       </header>
       <div class="input-data">
-        <!-- 3. ADIÇÃO DO INPUT DE TEXTO -->
+        <!-- [M01S05] Ex. 3 - ADIÇÃO DO INPUT DE TEXTO -->
         <input type="text" id="input-tarefa" placeholder="Digite uma tarefa...">
-        <!-- 3. ADIÇÃO DO BOTÃO -->
-        <button class="btn-add">Adicionar</button>
+        <!-- [M01S05] Ex. 3 - ADIÇÃO DO BOTÃO -->
+        <button class="btn-add" onclick="addTarefa()">Adicionar</button>
       </div>
-      <!-- 3. ADIÇÃO DA LISTA NÃO ORDENADA -->
+      <!-- [M01S05] Ex. 3 - ADIÇÃO DA LISTA NÃO ORDENADA -->
       <ul class="list">
-        <div class="li-items">
-          <input type="checkbox" class="input-li"><!-- 4. ADIÇÃO DE CAIXAS DE SELEÇÃO-->
-          <li>Estudar HTML e CSS</li>
-          <button class="erase">X</button><!-- 4. ADIÇÃO DE BOTÕES DE REMOVER-->
-        </div>
-        <div class="li-items">
+        <li class="li-items">
+          <input type="checkbox" class="input-li"> <!-- [M01S05] Ex. 4 - ADIÇÃO DE CAIXAS DE SELEÇÃO-->
+          <span>Estudar HTML e CSS</span>
+          <button class="erase"><i class="fa-regular fa-circle-xmark icon"></i></button><!-- [M01S05] Ex. 4 - ADIÇÃO DE BOTÕES DE REMOVER-->
+        </li>
+        <li class="li-items">
           <input type="checkbox" class="input-li">
-          <li>Estudar JavaScript</li>
-          <button class="erase">X</button>
-        </div>
-        <div class="li-items">
+          <span>Estudar JavaScript</span>
+          <button class="erase"><i class="fa-regular fa-circle-xmark icon"></i></button>
+        </li>
+        <li class="li-items">
           <input type="checkbox" class="input-li">
-          <li>Fazer exercícios</li>
-          <button class="erase">X</button>
-        </div>
+          <span>Fazer exercícios</span>
+          <button class="erase"><i class="fa-regular fa-circle-xmark icon"></i></button>
+        </li>
       </ul>
     </div>
   </section>
