@@ -18,11 +18,15 @@ function addTarefa() {
   }
 }
 
-// REMOVER <LI> DA LISTA AO CLICAR NO BOTÃO 'X'
+// [M1S07] Ex. 3 - REMOVER <LI> DA LISTA AO CLICAR NO BOTÃO 'X'
 function removeTarefa(button) {
-  let liToRemove = button.parentElement;
+  let removerLi = button.parentElement;
   
-  liToRemove.remove();
+  // [M1S07] Ex. 3 - CONFIRMAÇÃO/CANCELAMENTO DA REMOÇÃO DA TAREFA DA LISTA
+  let confirmacao = confirm("Você tem certeza que deseja excluir essa tarefa?");
+  if (confirmacao) {
+    removerLi.remove();
+  }
 }
 
 
