@@ -1,11 +1,11 @@
 * {
-  font-family: Roboto;
+  font-family: Roboto; /*[M1S06] Ex. 3 - DEFINIÇÃO DE FONTE*/
   margin: 0;
   box-sizing: border-box;
 }
 
 .container {
-  background: linear-gradient(to bottom, #2b187a, #18417a);
+  background: linear-gradient(to bottom, #2b187a, #18417a); /*[M1S06] Ex. 3 - DEFINIÇÃO DE BACKGROUND COLOR*/
   /* [M01S06] Ex. 1 - CONTAINER A O CENTRO DA PÁGINA */
   min-height: 100vh;
   margin: 0;
@@ -24,6 +24,7 @@
   flex-direction: column;
 }
 
+/*[M1S06] Ex. 3 - ESTILOS DO CABEÇALHO*/
 .container-box h1 {
   justify-content: center;
   color: rgb(29, 29, 29);
@@ -48,6 +49,7 @@
   width: 60%
 }
 
+/*[M1S06] Ex. 3 - ESTILOS DO BOTÃO "ADICIONAR*/
 /* [M01S06] Ex. 1 - POSICIONAMENTO BOTÃO 'ADICIONAR' */
 .btn-add {
   border: none;
