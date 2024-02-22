@@ -88,6 +88,7 @@
 }
 
  /* [M01S06] Ex. 2 - LINE THROUGH QUANDO CHECKBOX FOR MARCADO */
+ /* [M1S07] Ex. 2 - CHECKBOX TAXADO AO MARCAR ITEM E SEM ESTAR TAXADO AO DESMARCAR */
  .input-li:checked + span {
   text-decoration: line-through; /* [M01S06] Ex. 2 - POSICIONAMENTO DA LISTA */
 }
