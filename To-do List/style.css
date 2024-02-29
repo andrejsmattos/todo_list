@@ -26,11 +26,19 @@
 
 /*[M1S06] Ex. 3 - ESTILOS DO CABEÇALHO*/
 .container-box h1 {
-  justify-content: center;
+  justify-content: flex-start;
+  margin-left: 40px;
   color: rgb(29, 29, 29);
   display: flex;
   align-items: center;
   margin-bottom: 15px;
+}
+
+h1 i {
+  margin-right: 20px;
+  color: #780000;
+  padding: 10px;
+  border-radius: 50%;
 }
 
 .input-data {
@@ -39,10 +47,12 @@
 }
 
 #input-tarefa {
+  box-sizing: border-box;
   height: 50px;
   border-radius: 100px 0 0 100px;
   border: 1px solid lightgray;
   margin-bottom: 20px;
+  border-right: 0;
   margin-right: 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding-left: 25px;
@@ -121,3 +131,14 @@
 .erase:active {
   opacity: 0.5;
 }
+
+#qtas-tarefas {
+  text-align: right;
+  padding: 20px 0 0 0;
+  margin-top: 40px;
+  width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 14px;
+}
+

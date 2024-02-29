@@ -16,7 +16,16 @@ function addTarefa() {
   
   document.querySelector('#input-tarefa').value = ""; // [M1S07] Ex. 1 - TEXTO DE INPUT É APAGADO DEPOIS DE ADICIONADO À LISTA
   }
+  quantidadeDeTarefas ();
 }
+
+inputTarefa.addEventListener('keypress', function (e) {
+  if (e.key === 'Enter') {
+    addTarefa();
+  }
+});
+
+
 
 // [M1S07] Ex. 3 - REMOVER <LI> DA LISTA AO CLICAR NO BOTÃO 'X'
 function removeTarefa(button) {
@@ -27,6 +36,24 @@ function removeTarefa(button) {
   if (confirmacao) {
     removerLi.remove();
   }
+  quantidadeDeTarefas ();
 }
 
+// [M1S07] Ex. 4 - CONTADOR DE TAREFAS
+function quantidadeDeTarefas() {
+  let numeroDeTarefas = document.querySelectorAll('.li-items').length - 1;
+  let divNroTarefas = document.getElementById("qtas-tarefas");
+
+  if (divNroTarefas) {
+    divNroTarefas.innerHTML = `<em>${numeroDeTarefas} tarefas na lista</em>`;
+  } else {
+    // Se o elemento não existir, crie um novo
+    divNroTarefas = document.createElement("div");
+    divNroTarefas.id = "qtas-tarefas";
+    divNroTarefas.innerHTML = `<em>${numeroDeTarefas} tarefa na lista</em>`;
+
+    let lista = document.querySelector(".list");
+    lista.parentNode.appendChild(divNroTarefas);
+  }
+}
 
